@@ -1,3 +1,26 @@
+/*
+
+1. Posicionamiento
+2. Modelo de Caja
+3. Tipografía
+4. Visuales
+5. Otros
+
+*/
+:root {
+    /*paleta de colores*/
+    --columbia-blue: #c9f0ff;
+    --just-azure: #eafffd;
+    --cultured-pink: #efeff0;
+    --languid-lavander: #d5cad6;
+    --deep-taupe: #6b5e62;
+    --black: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --white: #FFFFFF;
+    --pure-lagoon: #009897;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,19 +29,34 @@
 
  html {
      font-size: 62.5%;
+     font-family: 'Source Sans Pro', sans-serif;
 }
-h1 {
-    text-align: center;
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0; 
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0 ,0 , 0.15);
 }
-label {
-    display: block;
-    padding: 10px;
-}
-label span {
+.content-table thead tr {
+    background-color: var(--pure-lagoon);
+    color: var(--off-white);
+    text-align: left;
+    font-weight: bold;
     font-size: 1.5rem;
-
 }
-label input {
-    height: 10px;
-    width: 150px;
+.content-table th, .content-table td {
+    padding: 12px 15px;
+    font-size: 1.2rem;
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #dddd;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--pure-lagoon);
 }
